@@ -45,7 +45,6 @@ public class Main {
 
             int maxPoints = 0;
             String roundWinner = "";
-            boolean roundHasWinner = false;
 
             for (Player player : players) {
                 System.out.println("Det är " + player.getName() + " tur nu");
@@ -63,7 +62,6 @@ public class Main {
                     player.increaseScore();
                     System.out.println("================");
                     roundWinner = player.getName();
-                    // roundHasWinner = true;
                     maxPoints = player.getPoints();
                 } else {
                     System.out.println("FEEEEL!!!");
